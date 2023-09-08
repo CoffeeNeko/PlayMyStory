@@ -396,5 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/Cache/tvOS
-/Documentation
+
+# PlayMyStory local directories
+/Cache/
+/Documentation/
+/Builds/

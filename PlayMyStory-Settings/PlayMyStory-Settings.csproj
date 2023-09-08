@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>..\Cache\Settings\</BaseIntermediateOutputPath>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>PlayMyStory_Settings</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>PlayMyStory</Title>
+    <Authors>Nico Jablinski</Authors>
+    <Copyright>Nico Jablinski</Copyright>
+    <PackageProjectUrl>https://github.com/CoffeeNeko/PlayMyStory/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CoffeeNeko/PlayMyStory/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <BaseOutputPath>..\Builds\Settings\</BaseOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\Documentation\Settings.XML</DocumentationFile>
+    <BaseIntermediateOutputPath>..\Cache\Settings\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+</Project>

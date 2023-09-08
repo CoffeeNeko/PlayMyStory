@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>..\Cache\Linux\</BaseIntermediateOutputPath>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>PlayMyStory_Linux</RootNamespace>
+    <UserSecretsId>54a28845-869a-4732-b876-67c1259612d0</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <OutputType>WinExe</OutputType>
+    <Title>PlayMyStory</Title>
+    <Authors>Nico Jablinski</Authors>
+    <Copyright>Nico Jablinski</Copyright>
+    <PackageProjectUrl>https://github.com/CoffeeNeko/PlayMyStory/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CoffeeNeko/PlayMyStory/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <BaseOutputPath>..\Builds\Linux\</BaseOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\Documentation\Linux.XML</DocumentationFile>
+    <BaseIntermediateOutputPath>..\Cache\Linux\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlayMyStory-Framework\PlayMyStory-Framework.csproj" />
+  </ItemGroup>
+
+</Project>
